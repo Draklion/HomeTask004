@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿string CW(string msg)
+{
+  Console.WriteLine(msg);
+  return msg;
+}
+string CR()
+{
+  return Console.ReadLine();
+}
+try
+{
+  CW("Задание 1. Программа, которая принимает на вход число и выдает количество цифр в числе.");
+  string number = CR();
+  CW($"Количество цифр в числе: {number.Length}.");
+}
+catch { }
