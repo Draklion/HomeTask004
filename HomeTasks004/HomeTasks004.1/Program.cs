@@ -13,4 +13,4 @@ try
   string number = CR();
   CW($"Количество цифр в числе: {number.Length}.");
 }
-catch { }
+catch { CW("Вы ввели некорректное значение."); }
